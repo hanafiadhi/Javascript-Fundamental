@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function return value</title>
+  </head>
+
+  <body>
+    <script>
+      function sayHello(nama) {
+        const person = `Hallo ${nama}`;
+        return person;
+      }
+
+      const aaa = sayHello("hanafi");
+      document.writeln(`<p>${aaa}</p>`);
+
+      function isContains(array, searchValue) {
+        for (const element of array) {
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+      const array = [
+        1, 2, 3, 4, 5, 2234, 234231, 324, 45, 5675, 4, 35, 234, 6, 3121234,
+      ];
+      const search = 5;
+      document.writeln(isContains(array, search));
+    </script>
+  </body>
+</html>
