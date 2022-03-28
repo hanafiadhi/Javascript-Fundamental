@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function Anonymouse</title>
+  </head>
+
+  <body>
+    <script>
+      const say = function (name) {
+        document.writeln(`<p>Hai ${name} semoga harimu menyenangkan</p>`);
+      };
+
+      say("Hanafi Adhi Prasetyo");
+
+      function giveMeName(callback) {
+        callback("hanafi");
+      }
+      giveMeName(say);
+
+      giveMeName(function (name) {
+        document.writeln(`<p>Hai ${name} semoga harimu menyenangkan</p>`);
+      });
+    </script>
+  </body>
+</html>
